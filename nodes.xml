@@ -1,0 +1,23 @@
+<data>
+	<node id="1">
+		<name>A</name>
+		<depends>B</depends>
+		<depends>C</depends>
+	</node>
+	<node id="2">
+		<name>B</name>
+		<depends>C</depends>
+		<depends>D</depends>
+	</node>
+	<node id="3">
+		<name>C</name>
+		<depends>E</depends>
+	</node>
+	<node id="4">
+		<name>D</name>
+	</node>
+	<node id="5">
+		<name>E</name>
+		<depends>D</depends>
+	</node>
+</data>

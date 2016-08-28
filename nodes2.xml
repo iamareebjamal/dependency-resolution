@@ -1,0 +1,36 @@
+<data>
+    <node id="1">
+        <name>A</name>
+        <depends>B</depends>
+    </node>
+    <node id="2">
+        <name>B</name>
+        <depends>C</depends>
+        <depends>D</depends>
+    </node>
+    <node id="3">
+        <name>C</name>
+        <depends>E</depends>
+        <depends>A</depends>
+    </node>
+    <node id="4">
+        <name>D</name>
+        <depends>F</depends>
+    </node>
+    <node id="5">
+        <name>E</name>
+        <depends>D</depends>
+    </node>
+    <node id="6">
+        <name>F</name>
+    </node>
+    <node id="7">
+        <name>G</name>
+        <depends>D</depends>
+        <depends>C</depends>
+    </node>
+    <node id="8">
+        <name>H</name>
+        <depends>D</depends>
+    </node>
+</data>
