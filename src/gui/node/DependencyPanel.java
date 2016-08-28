@@ -103,7 +103,7 @@ public class DependencyPanel extends JPanel {
             if (error)
                 drawUtils.drawNode(new Point(x, y + 100), "ERROR");
             else
-                drawUtils.drawNode(new Point(x, y + 100), "END", DrawUtils.parseColor("#00C853"), DrawUtils.parseColor("#B9F6CA"));
+                drawUtils.drawNode(new Point(x, y + 100), "END", DrawUtils.parseColor("#8BC34A"), DrawUtils.parseColor("#DCEDC8"));
         }
     }
 }

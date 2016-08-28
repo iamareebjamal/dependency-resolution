@@ -86,26 +86,26 @@ public class DrawUtils {
 
     }
 
-    public void drawBoldEdge(Point from, Point to) {
-        g.setColor(parseColor("#00BCD4"));
-        g.setStroke(new BasicStroke(8));
-        radius -= 5;
-        drawArrowLine(from, to, 29, 14);
-        radius += 5;
-        drawEdge(from, to);
+    public void drawHighlightedNode(Point point){
+        g.setColor(parseColor("#AA00FF"));
+        radius+=7;
+        g.fillOval(point.x - radius, point.y - radius, 2 * radius, 2 * radius);
+        radius-=7;
+    }
+
+    public void drawHighlightedEdge(Point from, Point to) {
+        g.setColor(parseColor("#8E24AA"));
+        drawBaseEdge(from, to);
     }
 
     public void drawEdge(Point from, Point to) {
         g.setColor(parseColor("#555555"));
-        g.setStroke(new BasicStroke(3));
-        drawArrowLine(from, to, 20, 8);
+        drawBaseEdge(from, to);
     }
 
-    public void drawHighlightedNode(Point point){
-        g.setColor(parseColor("#E91E63"));
-        radius+=5;
-        g.fillOval(point.x - radius, point.y - radius, 2 * radius, 2 * radius);
-        radius-=5;
+    private void drawBaseEdge(Point from, Point to) {
+        g.setStroke(new BasicStroke(3));
+        drawArrowLine(from, to, 20, 8);
     }
 
     public void drawNode(Point point, String text) {

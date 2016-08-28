@@ -86,7 +86,7 @@ public class NodePanel extends JPanel {
 
             for (Node dep : node.getDependents()) {
                 if(bold)
-                    drawUtils.drawBoldEdge(pointMap.get(dep), pointMap.get(node));
+                    drawUtils.drawHighlightedEdge(pointMap.get(dep), pointMap.get(node));
                 else
                     drawUtils.drawEdge(pointMap.get(dep), pointMap.get(node));
             }
